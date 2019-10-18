@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">auabnb</string>
+    <string name="app_name">Welcome to mabenu</string>
+    <string name="partner">Be a partner</string>
+    <string name="profile">Profile</string>
 </resources>
