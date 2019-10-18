@@ -10,18 +10,104 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp">
 
         <TextView
+            android:id="@+id/helper_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:textSize="25sp"
-            android:id="@+id/activityTitle1"
             android:textAlignment="textStart"
             android:textColor="@color/blackColor"/>
 
+        <EditText
+            android:id="@+id/new_apart_title"
+            android:layout_below="@id/helper_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:textColorHint="@color/blackColor"
+            android:paddingTop="12dp"
+            android:paddingLeft="16dp"
+            android:paddingBottom="13dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_border"/>
+
+        <EditText
+            android:id="@+id/new_apart_price"
+            android:layout_below="@id/new_apart_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:textColorHint="@color/blackColor"
+            android:paddingTop="12dp"
+            android:paddingLeft="16dp"
+            android:paddingBottom="13dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_border"/>
+
+        <EditText
+            android:id="@+id/new_apart_description"
+            android:layout_below="@id/new_apart_price"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:hint="Description"
+            android:textColorHint="@color/blackColor"
+            android:paddingBottom="70dp"
+            android:paddingStart="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_border"/>
+
+        <TextView
+            android:id="@+id/new_apart_images_title"
+            android:layout_below="@+id/new_apart_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Images"
+            android:textSize="20sp"
+            android:textColor="@color/blackColor"
+            android:layout_marginTop="13dp"/>
+
+        <RelativeLayout
+            android:id="@+id/new_apart_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_apart_images_title"
+            android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/new_apart_images_add"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/borderColor"
+                android:textAlignment="center"
+                android:text="+"
+                android:textSize="40dp"
+                android:textColor="@color/blueColor"
+                android:layout_below="@id/new_apart_images_title"
+                android:layout_marginTop="10dp"/>
+
+
+
+
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/next_action"
+        android:layout_marginHorizontal="16dp"
+        android:background="@color/mainColor"
+        android:textAlignment="center"
+        android:text="NEXT"
+        android:textSize="20sp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="70dp"
+        android:textColor="@color/whiteColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_view"
