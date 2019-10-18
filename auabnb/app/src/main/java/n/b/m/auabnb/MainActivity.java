@@ -2,9 +2,12 @@ package n.b.m.auabnb;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -68,7 +71,26 @@ public class MainActivity extends AppCompatActivity {
         ofText3.setText(" г. Алматы, Каблукова - Фруне");
 
 
+        CardView cardView1 = (CardView) findViewById(R.id.top_card_apart1);
+        CardView cardView2 = (CardView) findViewById(R.id.top_card_apart2);
 
+        cardView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), ApartmentActivity.class);
+                v.getContext().startActivity(intent);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+            }
+        });
+
+        cardView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), ApartmentActivity.class);
+                v.getContext().startActivity(intent);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+            }
+        });
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.bottom_navigation_view);
         navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
