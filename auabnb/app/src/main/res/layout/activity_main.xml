@@ -153,7 +153,7 @@
 
 
         <androidx.cardview.widget.CardView
-
+            android:id="@+id/top_card_apart1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/top_rated_apartments"
@@ -215,7 +215,7 @@
 
         <androidx.cardview.widget.CardView
 
-            android:id="@+id/top_card_apart"
+            android:id="@+id/top_card_apart2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/top_rated_apartments"
@@ -281,7 +281,7 @@
             android:id="@+id/offers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/top_card_apart"
+            android:layout_below="@+id/top_card_apart2"
             android:layout_marginTop="20dp"
             android:textAlignment="textStart"
             android:textColor="@color/blackColor"
