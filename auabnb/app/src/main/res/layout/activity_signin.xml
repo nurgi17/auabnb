@@ -21,13 +21,21 @@
                 android:layout_width="200dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="120dp"
-                android:layout_marginBottom="100dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="40dp"
                 android:padding="140dp"
                 android:background="@drawable/logo" />
 
+            <TextView
+                android:id="@+id/error_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/blackColor"
+                />
+
             <EditText
-                android:id="@+id/e-mail"
+                android:id="@+id/email"
                 android:layout_below="@id/helper_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

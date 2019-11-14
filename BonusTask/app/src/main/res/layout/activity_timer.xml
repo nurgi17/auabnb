@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlview">
+
+    <TextView
+        android:layout_above="@+id/button_back"
+        android:layout_marginBottom="-200dp"
+        android:id="@+id/count_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Back"
+        android:layout_marginHorizontal="150dp"
+        android:layout_marginVertical="300dp"/>
+
+</LinearLayout>
