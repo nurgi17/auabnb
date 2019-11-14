@@ -18,7 +18,7 @@ public class PartnerActivity extends AppCompatActivity {
         setTitle(R.string.partner);
 
         TextView title = (TextView) findViewById(R.id.helper_title);
-        title.setText("   Please fill the information");
+        title.setText("Please fill the information");
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.bottom_navigation_view);
         navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
