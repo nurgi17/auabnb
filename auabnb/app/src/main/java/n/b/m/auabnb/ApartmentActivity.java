@@ -1,8 +1,12 @@
 package n.b.m.auabnb;
 
+import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.ActionBar;
@@ -37,5 +41,19 @@ public class ApartmentActivity extends AppCompatActivity {
         sliderView.setIndicatorUnselectedColor(Color.GRAY);
         sliderView.setScrollTimeInSec(3); //set scroll delay in seconds :
         sliderView.startAutoCycle();
+
+
+        Button call = (Button) findViewById(R.id.call_action);
+
+        call.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel: 87012345678"));
+                startActivity(intent);
+            }
+        });
+
+
     }
 }
