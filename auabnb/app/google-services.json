@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "13672387010",
+    "firebase_url": "https://mabenu-3ac40.firebaseio.com",
+    "project_id": "mabenu-3ac40",
+    "storage_bucket": "mabenu-3ac40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13672387010:android:8b5e21d25c68a4f7c2c65b",
+        "android_client_info": {
+          "package_name": "n.b.m.auabnb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13672387010-p848sag3ne3vp2qe77asqtsifpbjmm9e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "n.b.m.auabnb",
+            "certificate_hash": "914413c11659336058334bca0be7671adf2e631e"
+          }
+        },
+        {
+          "client_id": "13672387010-gi3945sesjf593udssg586pqpsjvan4q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM-VR0IQaR7PxmSbCX_ZwogXPIAAjW9LE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13672387010-gi3945sesjf593udssg586pqpsjvan4q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

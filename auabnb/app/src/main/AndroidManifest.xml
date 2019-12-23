@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:networkSecurityConfig="@xml/network_security_config">
+        android:networkSecurityConfig="@xml/network_security_config"
+        >
         <activity android:name=".SignInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,12 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SignUpActivity"></activity>
-        <activity android:name=".PartnerActivity"></activity>
-        <activity android:name=".PartnerAccessActivity"></activity>
-        <activity android:name=".ProfileActivity"></activity>
-        <activity android:name=".ApartmentActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".SignUpActivity" android:theme="@style/AppTheme.SlidrActivityTheme"></activity>
+        <activity android:name=".PartnerActivity" android:theme="@style/AppTheme.SlidrActivityTheme"></activity>
+        <activity android:name=".PartnerAccessActivity" android:theme="@style/AppTheme.SlidrActivityTheme"></activity>
+        <activity android:name=".ProfileActivity" android:theme="@style/AppTheme.SlidrActivityTheme"></activity>
+        <activity android:name=".ApartmentActivity" android:theme="@style/AppTheme.SlidrActivityTheme"></activity>
+        <activity android:name=".MainActivity" android:theme="@style/AppTheme.SlidrActivityTheme"></activity>
+        <activity android:name=".AllList" android:theme="@style/AppTheme.SlidrActivityTheme"></activity>
     </application>
 
 </manifest>

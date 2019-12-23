@@ -12,6 +12,8 @@ import android.widget.ImageView;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.r0adkll.slidr.Slidr;
+import com.r0adkll.slidr.model.SlidrInterface;
 import com.smarteist.autoimageslider.IndicatorAnimations;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
@@ -19,10 +21,13 @@ import com.smarteist.autoimageslider.SliderView;
 import n.b.m.auabnb.Adapters.SliderAdapter;
 
 public class ApartmentActivity extends AppCompatActivity {
+
+    private SlidrInterface slidr;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_apartment);
+        slidr = Slidr.attach(this);
         ImageView owner_image = (ImageView) findViewById(R.id.owner_image);
         owner_image.setClipToOutline(true);
         ActionBar actionBar = getSupportActionBar();
@@ -55,5 +60,13 @@ public class ApartmentActivity extends AppCompatActivity {
         });
 
 
+    }
+
+
+    public void lockSlide(View v){
+        slidr.lock();
+    }
+    public void unlockSlide(View v){
+        slidr.unlock();
     }
 }
