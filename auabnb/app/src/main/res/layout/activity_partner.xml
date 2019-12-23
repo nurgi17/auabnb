@@ -6,16 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/background_material_light"
     tools:context=".PartnerActivity">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp">
+            android:layout_marginHorizontal="16dp"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/helper_title"
@@ -26,6 +28,14 @@
                 android:textStyle="bold"
                 android:textAlignment="textStart"
                 android:textColor="@color/blackColor"/>
+
+            <TextView
+                android:id="@+id/error_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/blackColor"
+                />
 
             <EditText
                 android:id="@+id/new_apart_title"
@@ -82,6 +92,10 @@
                 android:layout_below="@+id/new_apart_images_title"
                 android:layout_marginTop="10dp"/>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
                 <Button
                     android:id="@+id/new_apart_images_add"
                     android:layout_width="50dp"
@@ -94,6 +108,21 @@
                     android:layout_below="@id/new_apart_images_title"
                     android:layout_marginTop="10dp"/>
 
+                <ImageView
+                    android:id="@+id/imgView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                     />
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    tools:itemCount="100"-->
+<!--                    tools:listitem="@tools:sample/avatars" />-->
+            </LinearLayout>
             <TextView
                 android:id="@+id/insert_address"
                 android:layout_width="match_parent"
@@ -147,7 +176,7 @@
                 android:background="@drawable/edit_text_border"/>
 
 
-        </RelativeLayout>
+        </LinearLayout>
     </ScrollView>
 
 

@@ -16,5 +16,10 @@
         <item name="android:layout_marginRight">15dp</item>
     </style>
 
+    <style name="AppTheme.SlidrActivityTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
 
 </resources>
