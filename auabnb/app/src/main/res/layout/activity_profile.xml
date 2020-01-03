@@ -24,7 +24,7 @@
             android:textColor="@color/blackColor"
             android:textSize="25sp"
             android:textStyle="bold"
-            android:text="About apartment"/>
+            android:text="About partner"/>
 
         <RelativeLayout
             android:id="@+id/owner"
@@ -56,11 +56,21 @@
             android:layout_below="@+id/owner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="70dp"
             android:textAlignment="textStart"
             android:textColor="@color/blackColor"
             android:textSize="20sp"
-            android:text="Clingfish streamer fish sea snail armored gurnard southern sandfish. Dragon goby jewfish, 'lagena,' ribbon eel dwarf loach yellowfin pike. Sandroller tadpole cod goblin shark horsefish trench banjo catfish golden shiner sweeper, 'sandroller parasitic catfish scat buri long-finned char, pipefish sockeye salmon,' neon tetra. Old World rivuline Blind shark Redfish barreleye escolar; minnow southern hake flagtail. Frilled shark barramundi salmon shark, searobin sardine yellow-eye mullet sandroller; leopard danio squaretail basking shark stonefish sea bream bocaccio combfish pikehead. Staghorn sculpin silver carp, glassfish yellow jack devil ray whalefish: slender snipe eel."/>
+            android:text="Clingfish streamer fish sea snail armored gurnard southern sandfish. Dragon goby jewfish, 'lagena,' ribbon eel dwarf loach yellowfin pike. Sandroller tadpole cod goblin shark horsefish trench banjo catfish golden shiner sweeper, 'sandroller parasitic catfish scat buri long-finned char, pipefish sockeye salmon,' neon tetra."/>
+
+        <Button
+            android:layout_below="@id/owner_text"
+            android:layout_marginTop="20dp"
+            android:id="@+id/sign_out_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginLeft="130dp"/>
 
 
     </RelativeLayout>

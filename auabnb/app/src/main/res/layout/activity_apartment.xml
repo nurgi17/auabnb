@@ -152,12 +152,22 @@
                     android:layout_below="@+id/owner"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="70dp"
                     android:textAlignment="textStart"
                     android:textColor="@color/blackColor"
                     android:textSize="20sp"
                     android:text="Clingfish streamer fish sea snail armored gurnard southern sandfish. Dragon goby jewfish, 'lagena,' ribbon eel dwarf loach yellowfin pike. Sandroller tadpole cod goblin shark horsefish trench banjo catfish golden shiner sweeper, 'sandroller parasitic catfish scat buri long-finned char, pipefish sockeye salmon,' neon tetra. Old World rivuline Blind shark Redfish barreleye escolar; minnow southern hake flagtail. Frilled shark barramundi salmon shark, searobin sardine yellow-eye mullet sandroller; leopard danio squaretail basking shark stonefish sea bream bocaccio combfish pikehead. Staghorn sculpin silver carp, glassfish yellow jack devil ray whalefish: slender snipe eel."/>
 
+
+                <fragment
+                    android:layout_below="@id/owner_text"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="70dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:id="@+id/mapAPI"
+                    android:name="com.google.android.gms.maps.SupportMapFragment">
+
+                </fragment>
 
             </RelativeLayout>
         </RelativeLayout>
