@@ -12,6 +12,12 @@ import android.widget.ImageView;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.r0adkll.slidr.Slidr;
 import com.r0adkll.slidr.model.SlidrInterface;
 import com.smarteist.autoimageslider.IndicatorAnimations;
@@ -20,13 +26,20 @@ import com.smarteist.autoimageslider.SliderView;
 
 import n.b.m.auabnb.Adapters.SliderAdapter;
 
-public class ApartmentActivity extends AppCompatActivity {
+public class ApartmentActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     private SlidrInterface slidr;
+    GoogleMap mapAPI;
+    SupportMapFragment mapFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_apartment);
+
+
+        mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapAPI);
+        mapFragment.getMapAsync(this);
+
         slidr = Slidr.attach(this);
         ImageView owner_image = (ImageView) findViewById(R.id.owner_image);
         owner_image.setClipToOutline(true);
@@ -68,5 +81,14 @@ public class ApartmentActivity extends AppCompatActivity {
     }
     public void unlockSlide(View v){
         slidr.unlock();
+    }
+
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        mapAPI = googleMap;
+        LatLng ALMATY = new LatLng(43.234768, 76.909890);
+        mapAPI.addMarker(new MarkerOptions().position(ALMATY).title("Apartment 1"));
+        mapAPI.moveCamera(CameraUpdateFactory.newLatLng(ALMATY));
+        mapAPI.setMaxZoomPreference(15.0f);
     }
 }
